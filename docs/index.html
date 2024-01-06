@@ -1,1 +1,13 @@
-Oh HI
+<div id="container">
+  <textarea id="inputText" placeholder="Enter text here..." oninput="processText()"></textarea>
+  <textarea id="outputText" placeholder="Processed text will appear here..." readonly></textarea>
+  <div id="controls">
+    <label><input type="checkbox" id="specialCharacters" onchange="processText()"> Multiple Special Character Reduction</label>
+    <label><input type="checkbox" id="wordmap" onchange="processText()"> Wordmap</label>
+    <label><input type="checkbox" id="removeVowels" onchange="processText()"> Remove Vowels <label><input type="checkbox" id="removeVowelsCapitals" onchange="processText()"> (include captials)</label></label>
+    <label><input type="checkbox" id="removeSpaces" onchange="processText()"> Remove Spaces</label>
+    <label><input type="checkbox" id="fillerWords" onchange="processText()"> Filler Words</label>
+    <label><input type="checkbox" id="removeLineBreaks" onchange="processText()"> Remove Line Breaks</label>
+  </div>
+  <div id="charCount">Original: 0 characters, Cleaned: 0 characters, Outputbox: 0 characters</div>
+</div>
